@@ -531,11 +531,11 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding BLAS
 FIND_PACKAGE_MESSAGE_DETAILS_BLAS:INTERNAL=[/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Accelerate.framework][v()]
 //Details about finding OpenMP
-FIND_PACKAGE_MESSAGE_DETAILS_OpenMP:INTERNAL=[TRUE][TRUE][c ][v3.1()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenMP:INTERNAL=[TRUE][TRUE][c ][v()]
 //Details about finding OpenMP_C
-FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_C:INTERNAL=[-Xclang -fopenmp][/usr/local/lib/libomp.dylib][v3.1()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_C:INTERNAL=[-Xclang -fopenmp][/usr/local/lib/libomp.dylib][v()]
 //Details about finding OpenMP_CXX
-FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_CXX:INTERNAL=[-Xclang -fopenmp][/usr/local/lib/libomp.dylib][v3.1()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_CXX:INTERNAL=[-Xclang -fopenmp][/usr/local/lib/libomp.dylib][v()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Have function cheev_

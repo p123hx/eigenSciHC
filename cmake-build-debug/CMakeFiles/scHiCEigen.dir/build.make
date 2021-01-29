@@ -116,22 +116,9 @@ CMakeFiles/scHiCEigen.dir/load/load_hic_file.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scHiCEigen.dir/load/load_hic_file.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bj/CLionProjects/scHiCtoolsEigen/load/load_hic_file.cpp -o CMakeFiles/scHiCEigen.dir/load/load_hic_file.cpp.s
 
-CMakeFiles/scHiCEigen.dir/embedding/embedding.cpp.o: CMakeFiles/scHiCEigen.dir/flags.make
-CMakeFiles/scHiCEigen.dir/embedding/embedding.cpp.o: ../embedding/embedding.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bj/CLionProjects/scHiCtoolsEigen/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/scHiCEigen.dir/embedding/embedding.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scHiCEigen.dir/embedding/embedding.cpp.o -c /Users/bj/CLionProjects/scHiCtoolsEigen/embedding/embedding.cpp
-
-CMakeFiles/scHiCEigen.dir/embedding/embedding.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/scHiCEigen.dir/embedding/embedding.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bj/CLionProjects/scHiCtoolsEigen/embedding/embedding.cpp > CMakeFiles/scHiCEigen.dir/embedding/embedding.cpp.i
-
-CMakeFiles/scHiCEigen.dir/embedding/embedding.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/scHiCEigen.dir/embedding/embedding.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bj/CLionProjects/scHiCtoolsEigen/embedding/embedding.cpp -o CMakeFiles/scHiCEigen.dir/embedding/embedding.cpp.s
-
 CMakeFiles/scHiCEigen.dir/test/test_reproducibility.cpp.o: CMakeFiles/scHiCEigen.dir/flags.make
 CMakeFiles/scHiCEigen.dir/test/test_reproducibility.cpp.o: ../test/test_reproducibility.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bj/CLionProjects/scHiCtoolsEigen/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/scHiCEigen.dir/test/test_reproducibility.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bj/CLionProjects/scHiCtoolsEigen/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/scHiCEigen.dir/test/test_reproducibility.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scHiCEigen.dir/test/test_reproducibility.cpp.o -c /Users/bj/CLionProjects/scHiCtoolsEigen/test/test_reproducibility.cpp
 
 CMakeFiles/scHiCEigen.dir/test/test_reproducibility.cpp.i: cmake_force
@@ -144,7 +131,7 @@ CMakeFiles/scHiCEigen.dir/test/test_reproducibility.cpp.s: cmake_force
 
 CMakeFiles/scHiCEigen.dir/load/processing_utils.cpp.o: CMakeFiles/scHiCEigen.dir/flags.make
 CMakeFiles/scHiCEigen.dir/load/processing_utils.cpp.o: ../load/processing_utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bj/CLionProjects/scHiCtoolsEigen/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/scHiCEigen.dir/load/processing_utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bj/CLionProjects/scHiCtoolsEigen/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/scHiCEigen.dir/load/processing_utils.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/scHiCEigen.dir/load/processing_utils.cpp.o -c /Users/bj/CLionProjects/scHiCtoolsEigen/load/processing_utils.cpp
 
 CMakeFiles/scHiCEigen.dir/load/processing_utils.cpp.i: cmake_force
@@ -160,7 +147,6 @@ scHiCEigen_OBJECTS = \
 "CMakeFiles/scHiCEigen.dir/embedding/reproducibility.cpp.o" \
 "CMakeFiles/scHiCEigen.dir/load/ContactMaps.cpp.o" \
 "CMakeFiles/scHiCEigen.dir/load/load_hic_file.cpp.o" \
-"CMakeFiles/scHiCEigen.dir/embedding/embedding.cpp.o" \
 "CMakeFiles/scHiCEigen.dir/test/test_reproducibility.cpp.o" \
 "CMakeFiles/scHiCEigen.dir/load/processing_utils.cpp.o"
 
@@ -170,13 +156,12 @@ scHiCEigen_EXTERNAL_OBJECTS =
 scHiCEigen: CMakeFiles/scHiCEigen.dir/embedding/reproducibility.cpp.o
 scHiCEigen: CMakeFiles/scHiCEigen.dir/load/ContactMaps.cpp.o
 scHiCEigen: CMakeFiles/scHiCEigen.dir/load/load_hic_file.cpp.o
-scHiCEigen: CMakeFiles/scHiCEigen.dir/embedding/embedding.cpp.o
 scHiCEigen: CMakeFiles/scHiCEigen.dir/test/test_reproducibility.cpp.o
 scHiCEigen: CMakeFiles/scHiCEigen.dir/load/processing_utils.cpp.o
 scHiCEigen: CMakeFiles/scHiCEigen.dir/build.make
 scHiCEigen: /usr/local/lib/libomp.dylib
 scHiCEigen: CMakeFiles/scHiCEigen.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bj/CLionProjects/scHiCtoolsEigen/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable scHiCEigen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bj/CLionProjects/scHiCtoolsEigen/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable scHiCEigen"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/scHiCEigen.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

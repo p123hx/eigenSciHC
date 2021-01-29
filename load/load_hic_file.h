@@ -13,7 +13,7 @@
 #include <iostream>
 #include <list>
 #include <Eigen/Dense>
-
+#include <vector>
 using namespace std;
 using namespace Eigen;
 

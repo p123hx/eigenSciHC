@@ -94,12 +94,12 @@ clean: CMakeFiles/scHiCEigen.dir/clean
 CMakeFiles/scHiCEigen.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scHiCEigen.dir/build.make CMakeFiles/scHiCEigen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scHiCEigen.dir/build.make CMakeFiles/scHiCEigen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/bj/CLionProjects/scHiCtoolsEigen/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target scHiCEigen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/bj/CLionProjects/scHiCtoolsEigen/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target scHiCEigen"
 .PHONY : CMakeFiles/scHiCEigen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/scHiCEigen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bj/CLionProjects/scHiCtoolsEigen/cmake-build-debug/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bj/CLionProjects/scHiCtoolsEigen/cmake-build-debug/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/scHiCEigen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bj/CLionProjects/scHiCtoolsEigen/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/scHiCEigen.dir/rule
