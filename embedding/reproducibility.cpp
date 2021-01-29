@@ -53,12 +53,12 @@ print_time, double sigma, unsigned window_size
 
 
         t1 = high_resolution_clock::now();
-
         MatrixXd scores(n_cells, score_col);
         scores << all_strata[0], all_strata[1], all_strata[2],
                 all_strata[3], all_strata[4], all_strata[5],
                 all_strata[6], all_strata[7], all_strata[8],
                 all_strata[9];
+
         t2 = high_resolution_clock::now();
         MatrixXd tmp1(n_cells, n_cells), tmp2(n_cells, n_cells);
         tmp1.noalias() = (scores * scores.transpose());
@@ -80,10 +80,6 @@ print_time, double sigma, unsigned window_size
                     else distance_mat(i, j) = sqrt(2 - 2.0 * tmpdiv);
                 }
         }
-
-
-
-
     } else {
         throw "Method {0} not supported. Only \"inner_product\", \"HiCRep\", \"old_hicrep\" and \"Selfish\".";
     }
@@ -101,7 +97,7 @@ print_time, double sigma, unsigned window_size
          //         << "Time 4:" << duration4.count() << endl
          << "total: " << tout <<endl;
     cout<<distance_mat<<endl;
-    return duration3.count();
+    return tout;
 }
 
 

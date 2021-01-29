@@ -68,6 +68,7 @@ kernel_shape,int max_distance,
                         int strata_idx = 0;
                         for(MatrixXd stratum : strata_local){
                             this->strata[ch][strata_idx].row(idx) =stratum.transpose();
+
                             strata_idx++;
 //                            cout<<stratum<<endl;
                         }
@@ -79,7 +80,6 @@ kernel_shape,int max_distance,
         }
     }
 }
-
 
 map<string, vector<MatrixXd>> scHiCs::get_strata() {
     return this->strata;

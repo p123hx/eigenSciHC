@@ -13,8 +13,10 @@ double fastHicP(vector<MatrixXd> all_strata) {
 
     return times;
 }
+
 int main(){
     vector<string> fileLst{"../test/data/cell_03","../test/data/cell_01","../test/data/cell_02"};
+
 
     string operation = "convolution";
     scHiCs y = scHiCs(fileLst, "mm9", 500000, 3, 4000000, true, "except Y",
@@ -25,6 +27,7 @@ int main(){
                         "chr8", "chr9", "chr10", "chr11", "chr12", "chr13", "chr14",
                         "chr15", "chr16", "chr17", "chr18", "chr19"}; //since "except Y"
     double tsum = 0.0;
+
     for(int i=100;i>0;i--){
         for (string s:chrs) {
             cout << "\n" << s << ":\n";
