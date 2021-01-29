@@ -5,7 +5,6 @@
 #include <utility>
 #include <fstream>
 #include "reproducibility.h"
-#include <vector>
 #include <string>
 #include <iostream>
 #include <chrono>
@@ -16,7 +15,7 @@
 
 using namespace std;
 using namespace Eigen;
-
+using namespace std::chrono;
 double
 pairwise_distance(vector<MatrixXd> all_strata, string similarity_method, bool
 print_time, double sigma, unsigned window_size

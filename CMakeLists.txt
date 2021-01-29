@@ -9,7 +9,7 @@ find_package(xtensor-blas REQUIRED)
 
 find_package(OpenMP REQUIRED)
 
-#set(CMAKE_CXX_FLAGS_RELEASE "-O3 -DNDEBUG")
+set(CMAKE_CXX_FLAGS_RELEASE "-O3 -DNDEBUG")
 if (OPENMP_FOUND)
     message(OPENMP FOUND)
     set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")

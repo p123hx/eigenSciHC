@@ -7,14 +7,9 @@
 
 #include <utility>
 #include <Eigen/Dense>
+#include <vector>
 using namespace std;
-using namespace std::chrono;
 using namespace Eigen;
-double pearsoncoeff(MatrixXd x, MatrixXd y, double size);
-
-MatrixXd euc_pdist_square(MatrixXd x);
-
-MatrixXd zscore_prop(MatrixXd a, int axis);
 
 double
 pairwise_distance(vector<MatrixXd> all_strata, string similarity_method,
