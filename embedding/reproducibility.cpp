@@ -14,7 +14,6 @@
 #include <Eigen/Core>
 #include <thread>
 
-#define EIGEN_USE_MKL_ALL
 using namespace std;
 using namespace Eigen;
 
@@ -22,7 +21,7 @@ double
 pairwise_distance(vector<MatrixXd> all_strata, string similarity_method, bool
 print_time, double sigma, unsigned window_size
 ) {
-    Eigen::initParallel();
+
     transform(similarity_method.begin(), similarity_method.end(),
               similarity_method.begin(), ::tolower);
 
@@ -48,7 +47,7 @@ print_time, double sigma, unsigned window_size
                                 icol).sqrt();
                 weighted_std.col(i) = sqrt(n_bins - i) * std;
 #pragma omp critical
-                score_col += icol;
+                {score_col += icol;}
             }
         }
 
@@ -62,11 +61,9 @@ print_time, double sigma, unsigned window_size
                 all_strata[9];
         t2 = high_resolution_clock::now();
         MatrixXd tmp1(n_cells, n_cells), tmp2(n_cells, n_cells);
-        setNbThreads(16);
-
-        //mkl_set_num_threads(16);
         tmp1.noalias() = (scores * scores.transpose());
         tmp2.noalias() = (weighted_std * (weighted_std.transpose()));
+        t3 = high_resolution_clock::now();
         int j;
 #pragma omp parallel
         {
@@ -85,7 +82,7 @@ print_time, double sigma, unsigned window_size
         }
 
 
-        t3 = high_resolution_clock::now();
+
 
     } else {
         throw "Method {0} not supported. Only \"inner_product\", \"HiCRep\", \"old_hicrep\" and \"Selfish\".";
@@ -104,7 +101,7 @@ print_time, double sigma, unsigned window_size
          //         << "Time 4:" << duration4.count() << endl
          << "total: " << tout <<endl;
     cout<<distance_mat<<endl;
-    return tout;
+    return duration3.count();
 }
 
 
